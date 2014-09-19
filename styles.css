@@ -1,0 +1,1287 @@
+/* =======================================================================
+One Page Respossive HTML5 Template
+======================================================================= */
+
+/* --------------------------------------
+=========================================
+GLOBAL STYLES
+=========================================
+-----------------------------------------*/
+
+body {
+	font-family: 'Josefin Sans', sans-serif !important;
+	font-size: 13pt;
+	color: #808080;
+	font-weight: 400;
+	overflow-x: hidden;
+	line-height: 22px;
+	text-align: center;
+    font-style: normal;        
+}
+
+/* Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix */
+@-webkit-viewport {
+	width: device-width;
+}
+@-moz-viewport {
+	width: device-width;
+}
+@-ms-viewport {
+	width: device-width;
+}
+@-o-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+/* Other fixes*/
+*,*:before,*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+i {
+	vertical-align: middle;
+}
+ul, ol {
+padding-left: 0 !important; 
+}
+li {
+    list-style: none;
+}
+/* Selection colours (easy to forget) */
+::selection {
+	background: #FC6D6D;
+	color: #FFF;
+}
+::-moz-selection {
+	background: #FC6D6D;
+	color: #FFF;
+}
+
+a {
+	color: #e96656;
+	-webkit-transition: all 700ms;
+	transition: all 700ms;
+}
+
+a,a:hover {
+	text-decoration: none;
+}
+a:hover {
+	color: #cb4332;
+}
+p {
+    margin: 0;
+}
+.full-width {
+	width: 100%;
+	margin: auto;
+}
+img {
+    max-width: 100%;
+}
+/*---------------------------------------
+ **   TYPOGRAPHY                     -----
+-----------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1,h2 {
+	font-family: 'amatic_scbold', 'sans-serif';
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 48px;
+}
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 45px !important;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 18px;
+}
+h5 {
+	font-size: 17px;
+}
+h6 {
+	font-size: 16px;
+}
+
+/*---------------------------------------
+ **   BUTTONS                        -----
+-----------------------------------------*/
+
+.buttons {
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 45px;
+}
+.button {
+	display: inline-block !important;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 35px 10px 35px;
+	border-radius: 4px;
+	margin: 10px;
+}
+.custom-button {
+	display: inline-block !important;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 13px 35px 13px 35px;
+	border-radius: 4px;
+	margin: 10px;
+	border: none;
+}
+.red-btn {
+	background: #e96656;
+}
+.green-btn {
+	background: #20AA73;
+}
+.blue-btn {
+	background: #3ab0e2;
+}
+.yellow-btn {
+	background: #E7AC44;
+}
+.red-btn,.green-btn,.blue-btn,.yellow-btn {
+	color: #FFF;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.blue-btn:hover {
+	color: #FFF;
+	background: #1288b9;
+}
+.red-btn:hover {
+	color: #FFF;
+	background: #cb4332;
+}
+.green-btn:hover {
+	color: #FFF;
+	background: #069059;
+}
+.yellow-btn:hover {
+	color: #FFF;
+	background: #d8951e;
+}
+
+/*---------------------------------------
+ **   COLORS                         -----
+-----------------------------------------*/
+
+/** BACKGROUNDS **/
+.red-bg {
+	background: #e96656;
+}
+.green-bg {
+	background: #34d293;
+}
+.blue-bg {
+	background: #3ab0e2;
+}
+.yellow-bg {
+	background: #E7AC44;
+}
+.dark-bg {
+	background: #404040;
+}
+.white-bg {
+	background:  #FFFFFF;
+}
+
+/** FOR TEXTS AND ICON FONTS **/
+.red-text {
+	color: #e96656;
+}
+.green-text {
+	color: #34d293;
+}
+.blue-text {
+	color: #3ab0e2;
+}
+.yellow-text {
+	color: #f7d861;
+}
+.dark-text {
+	color: #404040;
+}
+.white-text {
+	color: #FFFFFF;
+}
+
+/*---------------------------------------
+ **   BORDER BOTTOMS                 -----
+-----------------------------------------*/
+
+.white-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 50%;
+	height: 2px;
+	background: #F5F5F5;
+	bottom: -9px;
+	left: 25%;
+}
+.dark-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 50%;
+	height: 2px;
+	background: #404040;
+	bottom: -9px;
+	left: 25%;
+}
+.red-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 75%;
+	height: 2px;
+	background: #e96656;
+	bottom: -9px;
+	left: 12.5%;
+}
+.green-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 75%;
+	height: 2px;
+	background: #34d293;
+	bottom: -9px;
+	left: 12.5%;
+}
+.blue-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 75%;
+	height: 2px;
+	background: #3ab0e2;
+	bottom: -9px;
+	left: 12.5%;
+}
+.yellow-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 75%;
+	height: 2px;
+	background: #f7d861;
+	bottom: -9px;
+	left: 12.5%;
+}
+
+/*---------------------------------------
+ **   FORM                           -----
+-----------------------------------------*/
+
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus { 
+    color: #19a992;
+    background: #fff!important;
+    outline: 0; 
+}
+
+/*---------------------------------------
+ **   SECTION HEADERS                -----
+-----------------------------------------*/
+
+/*** SECTION HEADERS ***/
+.section-header {
+	text-align: center;
+	padding-bottom: 75px;
+}
+.section-header h2 {
+	padding-bottom: 10px;
+	line-height: 40px;
+	position: relative;
+	display: inline-block;
+}
+.section-header h6 {
+	font-size: 16px;
+}
+
+/* PRE LOADER */
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fefefe;
+	z-index: 99999;
+	height: 100%;
+	width: 100%;
+	overflow: hidden !important;
+}
+.status {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background-image: url(http://aboveallhuman.co/images/loading.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: -100px 0 0 -100px;
+}
+
+/*---------------------------------------
+=========================================
+ **   SECTION STYLES                 -----
+=========================================
+-----------------------------------------*/
+section {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+}
+
+/*---------------------------------------
+ **   SECTION:  HOME                  -----
+-----------------------------------------*/
+
+.header {
+	background: #fff;
+    background-size: contain; 
+	min-height: 150px;
+	position: relative;
+	overflow: hidden;
+}
+
+/*----  SECTION:  HOME > TOP BAR   ----*/
+.navbar {
+	background: #FFF url('http://aboveallhuman.co/images/menu-bg.png') repeat-x 0 0;
+	overflow: hidden;
+	border: 0;
+	border-radius: 0 !important;
+	text-align: center;
+}
+.navbar-nav { 
+    text-align: center;
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+}
+#main-nav {
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+	min-height: 150px;    
+}
+#main-nav.fixed {
+	position: fixed !important;
+	top: 0;
+}
+.navbar-inverse .navbar-nav>li {
+	display: inline;
+	margin-right: 20px;
+    margin-top: 57px;
+    padding: 0 10px;
+}
+.navbar-inverse .navbar-nav>li:last-child {
+	margin-right: 0 !important;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff!important;
+    padding: 0;
+    line-height: 15px;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    font-size: 12.2pt;
+    font-weight: 500;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #3c7890!important;
+}
+.navbar-inverse .navbar-nav>li img.site-logo {
+    margin-top: -57px;
+    width: auto;
+    margin-left: 16px;
+}
+.navbar-inverse .navbar-nav>li i.fa-icon {
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    background: #fff;
+    padding: 7px 0;
+    color: #b8d4df;
+    width: 24px;
+    height: 23px;
+    margin: -7px 5px 0;
+    line-height: 10px;
+    font-size: 14px;
+}
+.navbar-inverse .navbar-nav>li a:hover {
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}    
+.navbar-inverse .navbar-nav>li a:hover i.fa-facebook {
+    background: #3c5b9b;
+    color: #fff!important;
+}
+.navbar-inverse .navbar-nav>li a:hover i.fa-twitter {
+    background: #2daae1;
+    color: #fff!important;
+}
+.navbar-inverse .navbar-nav>li a:hover i.fa-google-plus {
+    background: #dd4b39;
+    color: #fff!important;
+}
+.navbar-brand {
+	height: 76px;
+	position: relative;
+	line-height: 45px;
+}
+
+.current a {
+	color: #e96656 !important;
+	position: relative;
+	outline: none;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #e96656;
+	outline: none;
+}
+.navbar-toggle {
+	border: 0;
+	background-color: #808080;
+        margin-top: 23px;
+}
+.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus {
+	background-color: #e96656;
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+.nav-mobile { display: none; }
+/*----  SECTION:  MAIN > ILLUSTRATIONS   ----*/
+.visual {
+    -webkit-background-size: contain !important;
+    -moz-background-size: contain !important;
+    -o-background-size: contain !important;
+    background-size: contain !important;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.section-bg {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;    
+    background-color: transparent;
+    z-index: -1;
+}
+.box-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 999999;
+}
+/*---------------------------------------
+ **   SECTION:  Main           -----
+-----------------------------------------*/
+.visual-main { position:relative; z-index:-10;   
+}
+.main-bg {
+    background: url('http://aboveallhuman.co/images/illustration/background.png') no-repeat 50% 0 !important;
+}
+.main-clouds {
+    background-image: url('http://aboveallhuman.co/images/illustration/clouds.png');
+}
+.main-road {
+    background: transparent url('http://aboveallhuman.co/images/illustration/road.png') no-repeat 50% 0;
+}
+.main-device {
+    background: transparent url('http://aboveallhuman.co/images/illustration/device.png') no-repeat 50% 0;
+}
+.main-island-1 {
+    background: transparent url('http://aboveallhuman.co/images/illustration/island-1.png') no-repeat 50% 0;
+}
+.main-island-2 {
+    background: transparent url('http://aboveallhuman.co/images/illustration/island-2.png') no-repeat 50% 0;
+}
+.main-island-3 {
+    background: transparent url('http://aboveallhuman.co/images/illustration/island-3.png') no-repeat 50% 0;
+}
+#main-content { 
+    position: relative; 
+    background: url('http://aboveallhuman.co/images/illustration/shader.png') repeat-x 0 0;
+    padding-bottom: 40px;
+    min-height: 200px;    
+}
+.main-content-bg {
+    background:  #f9f9f5;
+    width: 100%;
+    height: 100%;
+    margin-top: 145px;
+    display: inline-block;    
+    padding-bottom: 38px;
+}
+#main-content .main-title{
+    max-width: 660px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    color: #235b72;
+    font-weight: bold;
+} 
+.main-content {    
+    width: 100%;
+    position: relative;
+    background:  #f9f9f5;
+    margin-top: 20px;
+}
+.container-content{
+    max-width: 700px;
+    margin: 20px auto;
+    position: relative;
+    height:auto;
+    overflow: hidden;
+}
+.container-content p {
+    color: #262322;    
+    text-align: center;
+    margin:0 auto 35px;    
+}
+.container-content p.first { max-width: 467px; }
+.container-content p.second { max-width: 400px; }
+.container-content p.third { max-width: 345px; }
+.container-content .main-title { margin: 50px 0; text-align: center; color: #235b72; }
+.island-left {
+    background-attachment: fixed;
+    background-image: url('http://aboveallhuman.co/images/illustration/island-content-left.png');
+    background-position: 0 450px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 25%;
+}
+.island-right {
+    background-attachment: fixed;
+    background-image: url('http://aboveallhuman.co/images/illustration/island-content-right.png');
+    background-position: 90% 110%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 25%
+}
+.reg-button a {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #e7ac39;
+    padding: 22px 80px;
+    font-size: 20pt;
+    font-weight: 400;
+    height: auto;
+    display: inline-block;
+    width: 100%; 
+	max-width: 400px;
+}
+
+/*---------------------------------------
+ **   SECTION:  Speaker           -----
+-----------------------------------------*/
+
+.speaker {    
+    background-size: contain;
+	padding-bottom: 0px;
+	overflow: hidden;
+    margin-top: -45px;
+}
+.speaker-content {
+    background: #c7e3ee;
+    margin-top: 75px;
+    min-height: 812px;
+    padding-bottom: 139px;
+}
+.speaker-content:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background: transparent url('http://aboveallhuman.co/images/content-speaker-bg-top.png') repeat-x 0;
+    background-size: cover;
+    height: 87px;
+    top: 0;
+    left: 0;
+}
+.speaker:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background: transparent url('http://aboveallhuman.co/images/content-speaker-bg-down.png') repeat-x 0 100%;
+    background-size: contain;
+    height: 315px;
+    left: 0;
+    bottom: 0;
+}
+.speaker .main-title {
+    padding: 20px 0 0;
+    display: inline-block;
+    border-bottom: 4px solid #fff;    
+    color: #fff;
+    font-size: 35pt!important;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+.speaker .main-title .big {
+    font-size: 40pt;
+}
+.speaker .fix {
+    margin: 10px 0;
+}
+.speaker-box {
+    width: 68%;
+    display: inline-block;
+    margin: 0 auto;
+}
+/* BOX */
+.box {
+    background: #fff;
+    padding: 20px 0px;
+    display: inline-block;
+    width: 98%;
+    position: absolute;
+    z-index: 999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.box .title {
+    color: #3c606f;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;    
+    margin: 20px 0 10px!important;
+}
+.box .info {
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 17px;
+    color: #587c8a;
+    font-weight: 600;
+}
+.box .twitter {
+    color: #52c298;
+    padding: 5px 20px;
+    font-size: 18px;
+    font-weight: 700;
+} 
+.box img {
+    max-width: 160px!important;
+	display:inline-block !important; z-index:9999; position:relative; overflow:auto;
+}
+.box-shadow {
+    margin-bottom: 10px;
+    background: #d7ebf3;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+}
+
+.box-shadow img { display:inline-block !important;  z-index:9999; position:relative;  overflow:auto;  
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+    max-width: 110px;
+}
+
+.box-shadow .title {
+    margin: 20px 0;
+    text-align: center;
+    width:  100%;
+    font-weight: bold;
+}
+
+/*---------------------------------------
+ **   SECTION:  LowDown           -----
+-----------------------------------------*/
+
+.lowdown {
+    background: #fcf8f3;  
+	overflow: hidden;
+    min-height: 650px;
+    margin-top: -30px;
+}
+.lowdown-box {
+    width: 71%;
+    display: inline-block;
+    margin: 0 auto;
+}
+/* BOX */
+.lowdown .main-title {
+    padding: 20px 0 2px;
+    display: inline-block;
+    text-decoration: none;
+    color: #c57043;
+    font-size: 48px!important;
+    margin-bottom: 75px;
+    font-weight: bold;
+    border-bottom: 4px solid #c57043;
+}
+.lowdown .fix {
+    margin: 0;
+}
+
+.lowdown h3 {    
+    font-weight: 600!important;
+    font-size: 25pt!important;
+    color: #2b221d;
+
+}
+.lowdown .info {
+    text-align: center;
+    margin: 30px 0;
+    padding: 10px 0;
+    font-size: 14pt;
+    font-weight: 500;
+    color: #262322;
+	height: 90px;
+}
+.lowdown .reg-button a{
+    padding: 22px 30px !important;
+    width: 100%;
+}
+.lowdown-dot {
+    background: transparent url('http://aboveallhuman.co/images/dot.png') repeat-y 50%;
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto 30px;    
+}
+.lowdown-when .lowdown-dot {
+    height: 120px;
+}
+.lowdown-where .lowdown-dot {
+    height: 95px;
+}
+.lowdown-how .lowdown-dot {
+    height: 93px;
+}
+
+/*---------------------------------------
+ **   SECTION:  Schedule           -----
+-----------------------------------------*/
+.schedule {
+    background: #fdf9f5; position:relative; z-index:9999;
+    width:100%;
+    min-height: 700px;
+}
+.schedule-content {
+    padding-top: 65px;
+    background: #93bfd0;
+    min-height: 700px;
+}
+.top-bg {
+    height: 170px;
+    width: 100%;
+    background: #64a3bc;
+    top: 35px;
+    left: 0;
+    position: absolute;
+}
+/* BOX */
+.schedule-line {
+    width: 100%;
+    min-height: 650px;
+    display: inline-block;
+    background: transparent url('http://aboveallhuman.co/images/sched-line.png') repeat-y 50%;
+    background-size: 5px;
+    padding-top: 140px;
+    padding-bottom: 320px;
+    position: relative;
+    height: auto;
+}
+.schedule-keyboard {
+    background: transparent url('http://aboveallhuman.co/images/keyboard.png') no-repeat 49% 100%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    width: 100%;
+    height: 245px;
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    z-index: 5;
+}
+.schedule-keyboard .reg-button {   
+    margin-top: 95px;
+}
+.schedule-keyboard .reg-button a{ 
+    width: 285px;
+    padding: 20px;
+    font-size: 17pt;
+    font-weight: 600;
+}  
+.schedule .main-title {
+    padding: 20px 0 0;
+    display: inline-block;
+    border-bottom: 4px solid #c4edfd;
+    color: #c4edfd;
+    font-size: 35pt!important;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+}
+.schedule .main-title .big {
+    font-size: 40pt;
+}
+.schedule .fix {
+    margin: 100px 0;
+}
+.schedule-content:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background: #64a3bc url('http://aboveallhuman.co/images/schedule-top-bg.png') no-repeat 100% 0;
+    background-size: contain;
+    height: 40px;
+    top: 0;
+    left: 0;
+}
+.schedule:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background: #fafaf6 url('http://aboveallhuman.co/images/schedule-bottom-bg.png') repeat-x 0 0;
+    background-size: contain;
+    height: 238px;
+    left: 0;
+    bottom: 0;
+}
+.schedule-ul {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: auto;    
+}
+.schedule-ul li{
+    display: inline-block;
+    font-size: 22px;
+    line-height: 2em;
+    margin: 15px 0;
+    float: left;
+    clear: both;
+}
+.schedule-ul li p {
+    display: block;
+    padding: 0;
+    background: #fff;
+    width: auto;
+    text-align: left;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+}
+.schedule-ul li.l-break {
+    width: 100%;
+    text-align: center;
+}
+.schedule-ul li p.p-break {
+    background: none;
+    float: none;
+    cursor: auto;
+    margin: 0 auto;
+    display: inline-block;
+}
+.schedule-ul li p.p-break span.s-break{
+    background: #64a3bc;
+    padding: 20px 140px;
+    color: #fff;
+}
+.schedule-ul li p span{
+    padding: 20px 0;
+    float: left;
+}    
+.schedule-ul li p span.s-shadow-none{ color: #b1c2ca;float: none; }
+.schedule-ul li p span.s-shadow{ color: #b1c2ca; }
+.schedule-ul li p span.s-excerpt{ color: #326e85; padding-left: 20px; padding-right: 10px; }
+.schedule-ul li p span.s-image{ 
+    display: inline-block;
+    height: 49px;
+    margin: 14px 20px;
+    overflow: hidden;
+    padding: 0;
+    width: 49px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.ie10 .schedule-ul li p span.s-image{ 
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 4px 20px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    overflow: hidden;
+    float: right;
+}
+.schedule-ul li p span.s-image img{
+    height: 51px;
+    margin: 0;
+    width: 48px;
+} 
+.schedule-ul li p .s-overlay {
+    height: 47px;
+    margin-top: 3px;
+    position: absolute;
+    width: 48px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.schedule-ul li p span.s-green{ background: #1bab94; color: #fff; padding: 20px 15px; }
+.schedule-ul li p .s-overlay.green {
+    background: rgba(27, 171, 148, .55);
+}
+.schedule-ul li p span.s-nblue{ background: #235b72; color: #fff; padding: 20px 15px; }
+.schedule-ul li p .s-overlay.blue {
+    background: rgba(35, 91, 114, .55);
+}
+.schedule-ul li p span.s-orange{ background: #e7ac39; color: #fff; padding: 20px 15px; }
+.schedule-ul li p .s-overlay.orange {
+    background: rgba(231, 172, 57, .55);
+}
+.schedule-ul li p span.s-brown{ background: #a8782b; color: #fff; padding: 20px 15px; }
+.schedule-ul li p .s-overlay.brown {
+    background: rgba(168, 143, 23, .55);
+}
+.s-content{
+    position: relative;
+    background: #fff;
+    margin: 1px 0;
+    width: auto;
+    display: block;
+    clear: both;
+    font-size: 14px;
+    line-height: 2em;
+    text-align: left;
+    padding: 10px;
+    display: none;    
+}
+/*---------------------------------------
+ **   SECTION:  Sponsors           -----
+-----------------------------------------*/
+.sponsors {
+    background: #fafaf6; position:relative; z-index:99999;
+    width:100%;
+    min-height: 800px;
+}
+.sponsors-box {
+    width: 68%;
+    display: inline-block !important;
+    margin: 0 auto;
+}
+/* BOX */
+.sponsors .col-md-4 {
+    padding: 0;
+    margin: 0 -1px -1px;
+}
+.sponsors .box-model{
+    background: #fff;
+    border: 2px solid #ebebeb;
+    padding: 40px 30px;
+}
+.sponsors .main-title {
+    padding: 20px 0 0;
+    display: inline-block;
+    border-bottom: 4px solid #1bab94;
+    color: #1bab94;
+    font-size: 35pt!important;
+    margin-bottom: 45px;
+    font-weight: bold;
+}
+.sponsors .main-title .big {
+    font-size: 40pt;
+}
+.sponsors .fix {
+    margin: 0;
+}
+.sponsors .info {
+    max-width: 192px;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    font-weight: 600;
+}
+.sponsors .call-to-action {
+    margin: 55px 0 80px;
+    text-align: center;
+    background: url('http://aboveallhuman.co/images/sponsors-arrow.png') no-repeat 0 50%;
+    display: inline-block;
+    font-size: 22px;
+    padding: 0 44px;
+    background-size: contain;
+    font-weight: 600;
+}
+.sponsors span.sponsors-link a{ color: #1bab94; padding-bottom: 5px; border-bottom: 2px dotted #1bab94; }
+/*---------------------------------------
+ **   SECTION:  Contact           -----
+-----------------------------------------*/
+.contact {
+    background: #d3bb92 url('http://aboveallhuman.co/images/contact-bottom-bg.png') no-repeat 50% 100%;
+    background-size:contain; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -ms-background-size: contain;
+    -o-background-size: contain;
+    width:100%;
+    display: inline-block;
+	position:relative; z-index:99999;
+}
+.contact-content {
+    padding: 30px 0;
+}
+/* BOX */
+.contact .main-title {
+    padding: 20px 0 0;
+    display: block;
+    border-bottom: 4px solid #fff;
+    color: #fff;
+    font-size: 35pt!important;
+    display: inline-block;
+    width:auto;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.contact .main-title .big {
+    font-size: 40pt;
+}
+.contact .contact-title{
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 35px 0;
+    color: #fff;
+    font-size: 27px;
+}
+
+.contact .contact-form {
+    max-width: 450px;
+	width: 100%;
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+}
+.contact .contact-p {
+    padding: 0;
+    margin: 10px 0;
+    width: 100%;
+    overflow: hidden;
+    height: 55px;
+    display: inline-block;   
+}
+.contact .contact-input {
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    background: #e9ddc9;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+
+.contact textarea.contact-input {
+    /* text-align: left;  	REMOVED by CH 09/09/14*/
+    min-height: 200px;
+}
+.contact .contact-submit {
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    background: #47b096;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+.contact .contact-submit:hover {
+    background: #47b096!important;    
+}
+
+.contact .contact-newsletter {
+    max-width: 450px;
+	width: 100%;
+    padding: 5px;
+    display: block;
+    margin: 100px auto 10px; 
+}
+.contact .contact-nsubmit {
+    float: right;
+    position: relative;
+    top: -55px;
+    padding: 17px 25px;
+    border: none;
+    background: #8e4a26;
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+}
+#contact-nemail {
+    background: #fff;
+    text-align: left;
+    padding-right: 110px;
+    color: #8e4a26;
+    font-weight: bold;
+}
+.contact .contact-ntitle{
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    font-weight: 400;
+    padding: 60px 0 15px;
+    color: #fff;
+    font-size: 25px;
+}
+/*---------------------------------------
+ **   SECTION:  Footer           -----
+-----------------------------------------*/
+.footer {
+    background: #d5e6ed url('http://aboveallhuman.co/images/footer.png') repeat-x 50% 100%;
+    width:100%;
+    min-height: 858px;
+    margin-top: -10px;
+	position:relative; z-index:99999;  
+}
+.footer-content {
+}
+/* BOX */
+.footer-title {
+    font-weight: bold;
+    font-size: 27px;
+    color: #235b72;
+    margin-top: 55px;
+    
+}
+.footer-social {
+    width: auto;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 190px;
+}
+.footer-social .fa-icon{
+    padding: 25px 28px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    font-size: 30px;
+    color: #fff;       
+    margin: 35px 15px;
+}
+.footer-social .fa-facebook{ background: #3c5b9b; padding: 25px 33px!important; }
+.footer-social .fa-twitter{ background: #2daae1; }
+.footer-social .fa-google-plus{ background: #dd4b39; }
+.footer-nav {
+    display: inline-block;
+    width: auto;
+}
+.footer-nav li {
+    display: inline-block;
+    float: left;
+    padding: 5px 0;
+    margin: 5px 50px;
+}
+.footer-nav li a { color: #235b72; }
+.footer-nav li a:hover { color: #80a6b4; }
+.footer-action {
+    margin: 5px;
+}
+/* ON HOVER COLORED ROUNDED CIRCLE AROUND ICONS */
+.red,.green,.blue,.yellow {
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.red:hover .service-icon {
+	border: 10px solid #e96656;
+}
+.green:hover .service-icon {
+	border: 10px solid #34d293;
+}
+.blue:hover .service-icon {
+	border: 10px solid #3ab0e2;
+}
+.yellow:hover .service-icon {
+	border: 10px solid #f7d861;
+}
+
+.speaker-box h5 {
+	margin-bottom: 15px;
+	color: #404040;
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 17px;
+}
+.speaker-box p {
+	font-size: 14px;
+}
+
+/** mobile mountain seen **/
+.n_mountain{ width:100%; display:none;}
+.n_mountain img{ width:100%; display:inline-block; zoom:1; *display:inline;}
+
+
+@media screen and (max-width: 800px) {
+
+.contact .contact-form,
+.contact .contact-newsletter { max-width: 100% !important;  }
+	
+}
+
+@media screen and (min-width: 800px) {
+
+.nav-logo { display: none; }
+	
+}

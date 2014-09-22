@@ -377,7 +377,7 @@ section {
 
 /*----  SECTION:  HOME > TOP BAR   ----*/
 .navbar {
-	background: #FFF url('http://aboveallhuman.co/images/menu-bg.png') repeat-x 0 0;
+	background: #FFF url('../images/menu-bg.png') repeat-x 0 0;
 	overflow: hidden;
 	border: 0;
 	border-radius: 0 !important;
@@ -527,29 +527,29 @@ section {
 .visual-main { position:relative; z-index:-10;   
 }
 .main-bg {
-    background: url('http://aboveallhuman.co/images/illustration/background.png') no-repeat 50% 0 !important;
+    background: url('../images/illustration/background.png') no-repeat 50% 0 !important;
 }
 .main-clouds {
-    background-image: url('http://aboveallhuman.co/images/illustration/clouds.png');
+    background-image: url('../images/illustration/clouds.png');
 }
 .main-road {
-    background: transparent url('http://aboveallhuman.co/images/illustration/road.png') no-repeat 50% 0;
+    background: transparent url('../images/illustration/road.png') no-repeat 50% 0;
 }
 .main-device {
-    background: transparent url('http://aboveallhuman.co/images/illustration/device.png') no-repeat 50% 0;
+    background: transparent url('../images/illustration/device.png') no-repeat 50% 0;
 }
 .main-island-1 {
-    background: transparent url('http://aboveallhuman.co/images/illustration/island-1.png') no-repeat 50% 0;
+    background: transparent url('../images/illustration/island-1.png') no-repeat 50% 0;
 }
 .main-island-2 {
-    background: transparent url('http://aboveallhuman.co/images/illustration/island-2.png') no-repeat 50% 0;
+    background: transparent url('../images/illustration/island-2.png') no-repeat 50% 0;
 }
 .main-island-3 {
-    background: transparent url('http://aboveallhuman.co/images/illustration/island-3.png') no-repeat 50% 0;
+    background: transparent url('../images/illustration/island-3.png') no-repeat 50% 0;
 }
 #main-content { 
     position: relative; 
-    background: url('http://aboveallhuman.co/images/illustration/shader.png') repeat-x 0 0;
+    background: url('../images/illustration/shader.png') repeat-x 0 0;
     padding-bottom: 40px;
     min-height: 200px;    
 }
@@ -593,7 +593,7 @@ section {
 .container-content .main-title { margin: 50px 0; text-align: center; color: #235b72; }
 .island-left {
     background-attachment: fixed;
-    background-image: url('http://aboveallhuman.co/images/illustration/island-content-left.png');
+    background-image: url('../images/illustration/island-content-left.png');
     background-position: 0 450px;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -601,7 +601,7 @@ section {
 }
 .island-right {
     background-attachment: fixed;
-    background-image: url('http://aboveallhuman.co/images/illustration/island-content-right.png');
+    background-image: url('../images/illustration/island-content-right.png');
     background-position: 90% 110%;
     background-color: transparent;
     background-repeat: no-repeat;

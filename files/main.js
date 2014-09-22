@@ -5,9 +5,9 @@ window.scrollReveal = new scrollReveal();
 /*
 jQuery(window).load(function() {
         // will first fade out the loading animation
-	jQuery(".status").fadeOut();
+  jQuery(".status").fadeOut();
         // will fade out the whole DIV that covers the website.
-	jQuery(".preloader").delay(1000).fadeOut("slow");
+  jQuery(".preloader").delay(1000).fadeOut("slow");
 })
 */
 
@@ -31,7 +31,7 @@ function getWidth() {
         $('.contact .contact-ntitle').css({ padding: '25px 0 0' });
         $('.contact .contact-newsletter').css({ margin: '25px auto -29px' });
     } 
-	if ( width >= 480 && width < 768 ){
+  if ( width >= 480 && width < 768 ){
         $('.s-excerpt').each(function(){
             str = $(this).text();
             str = str.substr(0,10) + '...';
@@ -296,6 +296,6 @@ jQuery(document).ready(function($){
 =================================== */    
 // Load external links (the click event is being overwritten)
 $("a.external-link").on('click', function(){
-	var href = $(this).attr('href');
-	document.location.href(href)
+  var href = $(this).attr('href');
+  document.location.href(href)
 });
